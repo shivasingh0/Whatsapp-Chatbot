@@ -33255,3 +33255,12 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   outline-offset: 2px;
 }
 /* Device Page end */
+
+/* Contact Page start */
+.table-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+/* Contact Page end */

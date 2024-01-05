@@ -60,20 +60,20 @@ const SidebarBar = () => {
             </li>
             <li
               className={
-                location.pathname === "/feecollection" ? "mm-active" : ""
+                location.pathname === "/welcomemessage" ? "mm-active" : ""
               }
             >
-              <Link to="/feecollection" aria-expanded="false">
+              <Link to="/welcomemessage" aria-expanded="false">
                 <i class="bi-calendar2-event text-color"></i>
                 <span className="nav-text">Welcome Message</span>
               </Link>
             </li>
             <li
               className={
-                location.pathname === "/passout" ? "mm-active" : ""
+                location.pathname === "/autoreply" ? "mm-active" : ""
               }
             >
-              <Link to="/passout" aria-expanded="false">
+              <Link to="/autoreply" aria-expanded="false">
                 <i class="bi-calendar2-event text-color"></i>
                 <span className="nav-text">Auto Reply</span>
               </Link>
@@ -86,10 +86,10 @@ const SidebarBar = () => {
             </li> */}
             <li
               className={
-                location.pathname === "/employees" ? " mm-active" : ""
+                location.pathname === "/templates" ? " mm-active" : ""
               }
             >
-              <Link to="/employees" aria-expanded="false">
+              <Link to="/templates" aria-expanded="false">
                 <i class="bi bi-briefcase-fill text-color"></i>
                 <span className="nav-text"> Templates</span>
               </Link>
@@ -102,10 +102,10 @@ const SidebarBar = () => {
             </li> */}
             <li
               className={
-                location.pathname === "/lead-distribution" ? "mm-active" : ""
+                location.pathname === "/contact" ? "mm-active" : ""
               }
             >
-              <Link to="/lead-distribution" aria-expanded="false">
+              <Link to="/contact" aria-expanded="false">
                 <i class="bi bi-diagram-3-fill text-color"></i>
                 <span className="nav-text">Contacts</span>
               </Link>
@@ -116,12 +116,11 @@ const SidebarBar = () => {
             </li> */}
             <li
               className={
-                location.pathname === "/courses" ||
-                location.pathname === "/courses/addnewcourse"
+                location.pathname === "/unsubscribers"
                 ? "mm-active" : ""
               }
             >
-              <Link to="/courses" aria-expanded="false">
+              <Link to="/unsubscribers" aria-expanded="false">
                 <i class="bi-journals text-color"></i>
                 <span className="nav-text">Unsubscribers</span>
               </Link>
@@ -150,16 +149,22 @@ const SidebarBar = () => {
                 <span className="nav-text">Group Grabber</span>
               </Link>
             </li>
-            <li className={location.pathname === "/setting" ? "mm-active" : ""}>
-              <Link to="/setting" aria-expanded="false">
+            <li className={location.pathname === "/report" ? "mm-active" : ""}>
+              <Link to="/report" aria-expanded="false">
                 <i className="bi bi-gear-wide-connected text-color" />
                 <span className="nav-text">Report</span>
               </Link>
             </li>
-            <li>
-              <Link to="/login" aria-expanded="false" onClick={login}>
-                <i className="bi bi-box-arrow-right text-danger" />
+            <li className={location.pathname === "/receivedmessage" ? "mm-active" : ""}>
+              <Link to="/receivedmessage" aria-expanded="false">
+                <i className="bi bi-gear-wide-connected text-color" />
                 <span className="nav-text">Received Message</span>
+              </Link>
+            </li>
+            <li className={location.pathname === "/setting" ? "mm-active" : ""}>
+              <Link to="/setting" aria-expanded="false">
+                <i className="bi bi-gear-wide-connected text-color" />
+                <span className="nav-text">Setting</span>
               </Link>
             </li>
           </ul>
