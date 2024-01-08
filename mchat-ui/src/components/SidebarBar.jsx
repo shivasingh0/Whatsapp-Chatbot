@@ -127,10 +127,10 @@ const SidebarBar = () => {
             </li>
             <li
               className={
-                location.pathname === "/democlass" ? "mm-active" : ""
+                location.pathname === "/numberfilter" ? "mm-active" : ""
               }
             >
-              <Link to="/democlass" aria-expanded="false">
+              <Link to="/numberfilter" aria-expanded="false">
                 <i class="bi-input-cursor-text text-color"></i>
                 <span className="nav-text">Number Filter</span>
               </Link>

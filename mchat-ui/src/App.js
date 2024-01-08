@@ -16,6 +16,7 @@ import Report from "./pages/reportPage/Report";
 import ReceivedMessage from "./pages/receivedMessagePage/ReceivedMessage";
 import Contact from "./pages/contactsPage/Contact";
 import Unsubscribers from "./pages/unsubscribersPage/Unsubscribers";
+import NumberFilter from "./pages/numberFilterPage/NumberFilter";
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
             <Route path="templates" element={ <Template/> } />
             <Route path="contact" element={ <Contact/> } />
             <Route path="unsubscribers" element={ < Unsubscribers /> } />
+            <Route path="numberfilter" element={ < NumberFilter /> } />
             <Route path="report" element={ <Report/> } />
             <Route path="receivedmessage" element={ < ReceivedMessage /> } />
           </Route>
